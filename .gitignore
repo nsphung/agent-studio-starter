@@ -1,0 +1,14 @@
+.env
+.vscode/launch.json
+*.pyc
+__pycache__/
+.deepeval/
+*.egg-info
+dist/
+build/
+*.egg
+*.log
+
+# Frontend ignore
+frontend/node_modules/*
+frontend/.next/*

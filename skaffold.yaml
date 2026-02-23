@@ -1,0 +1,43 @@
+apiVersion: skaffold/v4beta13
+kind: Config
+metadata:
+  name: agent-studio-starter
+build:
+  artifacts:
+    - image: frontend
+      context: ./frontend
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        infer:
+          - "**/*.ts"
+          - "**/*.tsx"
+          - "**/*.css"
+
+    - image: backend
+      context: ./backend
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        infer:
+          - "**/*.py"
+  local:
+    useBuildkit: true
+
+manifests:
+  rawYaml:
+    - frontend/k8s/deployment.yaml
+    - backend/k8s/deployment.yaml
+portForward:
+  - resourceType: service
+    resourceName: frontend
+    port: 3000
+  # - resourceType: service
+  #   resourceName: backend
+  #   port: 8123
+
+# deploy:
+#   kubectl:
+#     manifests:
+#       - k8s/frontend/*.yaml
+#       - k8s/backend/*.yaml

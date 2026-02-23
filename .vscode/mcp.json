@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "docs-langchain": {
+      "url": "https://docs.langchain.com/mcp"
+    },
+    "CopilotKit MCP": {
+      "url": "https://mcp.copilotkit.ai/sse"
+    },
+    "Context7": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ]
+    },
+  }
+}

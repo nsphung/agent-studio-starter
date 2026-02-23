@@ -1,0 +1,17 @@
+.env
+*.pyc
+__pycache__/
+.deepeval/
+*.egg-info
+dist/
+build/
+*.egg
+*.log
+.venv/
+tests/
+README.md
+k8s/
+
+Dockerfile
+.dockerignore
+.git
