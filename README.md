@@ -4,7 +4,7 @@
 
 | | |
 | --- | --- |
-| Backend | [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv) [![Mypy](https://img.shields.io/badge/mypy-checked-blue)](https://mypy-lang.org/) [![Python 3.13](https://img.shields.io/badge/Python-3.13-red)](https://docs.python.org/3/whatsnew/3.13.html) |
+| Backend | [![uv](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json)](https://github.com/astral-sh/uv) [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff) [![Mypy](https://img.shields.io/badge/mypy-checked-blue)](https://mypy-lang.org/) [![Python 3.13](https://img.shields.io/badge/Python-3.13-red)](https://docs.python.org/3/whatsnew/3.13.html) |
 | Frontend | [![NextJs](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)](https://nextjs.org/) |
 
 A starter template for building **AI agent applications** with beautiful generative UIs, combining [LangChain Deep Agents](https://docs.langchain.com/oss/python/deepagents/overview) (LangGraph-powered backend) and [CopilotKit](https://docs.copilotkit.ai/) (React frontend with generative UI). This project demonstrates a weather assistant application that showcases real-time tool calling with custom UI components.
