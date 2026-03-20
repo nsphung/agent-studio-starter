@@ -547,7 +547,7 @@ kubectl apply -f frontend/k8s/deployment.yaml
 - **Python 3.13+** and `uv` for backend
 - **Node.js 20+** and `npm` for frontend
 - **Docker** for containerization
-- **Local Kubernetes cluster** (Minikube or another)
+- **Local Kubernetes cluster** (Tested on [Minikube for Linux](https://minikube.sigs.k8s.io/docs/start/?arch=%2Flinux%2Fx86-64%2Fstable%2Fbinary+download) and [Docker Desktop Kubernetes for Mac](https://docs.docker.com/desktop/use-desktop/kubernetes/#enable-kubernetes))
 - **Skaffold CLI** for development workflow
 - **API Keys**: GitHub Copilot or other LLM provider
 
@@ -563,7 +563,7 @@ cd agent-studio-starter
 2. **Start with Skaffold**
 
 ```bash
-# Make sure Local Kubernetes is running (Minikube or another)
+# Make sure Local Kubernetes is running (Minikube or Docker Desktop Kubernetes, etc...)
 skaffold dev
 ```
 
